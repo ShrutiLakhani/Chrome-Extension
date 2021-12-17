@@ -3,6 +3,7 @@ body
 {   
     
     font-family: 'Poppins', sans-serif;
+    min-width: 400px;
 }
 input
 {
@@ -22,4 +23,18 @@ margin-top: 5 rem;
 background-color: green;
 color: white;
 box-sizing: border-box;
+}
+
+ul{
+list-style: none;
+padding-left: 0;
+margin-top: 20px;
+}
+
+li{
+margin-top: 5px;
+}
+
+a{
+color:green;
 }
