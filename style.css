@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+body
+{   
+    
+    font-family: 'Poppins', sans-serif;
+}
+input
+{
+    width: 80%;
+    padding-left: 10 px;
+    padding-right: 10 px;
+    margin: 1rem;
+    border-color: green ;
+    box-sizing: border-box;
+}
+
+button
+{
+display: block;
+justify-content: auto;
+margin-top: 5 rem;
+background-color: green;
+color: white;
+box-sizing: border-box;
+}
