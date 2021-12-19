@@ -3,6 +3,7 @@ let myLeads = [];
 
 var inputText = document.querySelector("#input-el");
 var btnVal = document.querySelector("#input-btn")
+var btnTab = document.querySelector("#tab-btn")
 var btnDel = document.querySelector("#del-btn")
 const ulEl= document.querySelector("#ul-el");
 const divBtn = document.querySelector("#container")
@@ -47,6 +48,17 @@ btnDel.addEventListener("dblclick", function()
     render(myLeads);
 })
 
+btnTab.addEventListener("click", function()
+{
+    chrome.tabs.query({active: true, currentWindow: true, function(tabs)
+    {
+        console.log(tabs)
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+        
+    }})
+    })
 
 
 
